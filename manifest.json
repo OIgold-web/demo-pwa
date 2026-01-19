@@ -18,8 +18,8 @@
   "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "orientation": "portrait-primary",
 
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "background_color": "#000000",
 
   "categories": ["business", "productivity", "utilities"],
 
