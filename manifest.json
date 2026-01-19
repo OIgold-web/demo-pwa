@@ -26,7 +26,7 @@
   "icons": [
     {
       "src": "icon1.png",
-      "sizes": "192x192",
+      "sizes": "1024x1024",
       "type": "image/png"
     },
     {
@@ -44,13 +44,13 @@
 
   "screenshots": [
     {
-      "src": "screen1.png",
+      "src": "Screenshot1.png",
       "sizes": "540x720",
       "type": "image/png",
       "form_factor": "narrow"
     },
     {
-      "src": "screen2.png",
+      "src": "Screenshot2.png",
       "sizes": "540x720",
       "type": "image/png",
       "form_factor": "wide"
