@@ -1,16 +1,31 @@
 {
-  "name": "PWA ProgressiveWebApp",
-  "short_name": "PWA Demo",
-  "description": "Turn your website into a fast, reliable Progressive Web App!",
+  "id": "/demo-pwa/",
+  "name": "Demo PWA App",
+  "short_name": "DemoPWA",
+  "description": "A modern Progressive Web App demo with offline support and native-like features.",
   "lang": "en",
-  "start_url": "/demo-pwa/index1.html",
+  "dir": "ltr",
+
+  "start_url": "index1.html",
   "scope": "/demo-pwa/",
+  "scope_extensions": [
+    {
+      "origin": "https://oigold-web.github.io"
+    }
+  ],
+
   "display": "standalone",
-  "background_color": "#ffffff",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+
   "theme_color": "#000000",
+  "background_color": "#ffffff",
+
+  "categories": ["business", "productivity", "utilities"],
+
   "icons": [
     {
-      "src": "icon2.png",
+      "src": "icon1.png",
       "sizes": "192x192",
       "type": "image/png"
     },
@@ -25,6 +40,100 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
-    }
+  ],
 
+  "screenshots": [
+    {
+      "src": "screen1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screen2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Open App",
+      "short_name": "Home",
+      "description": "Open the PWA home screen",
+      "url": "index1.html",
+      "icons": [
+        {
+          "src": "icon1.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+
+  "file_handlers": [
+    {
+      "action": "index1.html",
+      "accept": {
+        "text/plain": [".txt", ".md"]
+      }
+    }
+  ],
+
+  "launch_handler": {
+    "client_mode": ["focus-existing", "navigate-new"]
+  },
+
+  "protocol_handlers": [
+    {
+      "protocol": "web+pwa",
+      "url": "index1.html?url=%s"
+    }
+  ],
+
+  "share_target": {
+    "action": "index1.html",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+
+  "prefer_related_applications": false,
+
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://oigold-web.github.io/demo-pwa/manifest.json"
+    }
+  ],
+
+  "iarc_rating_id": "ecr/12345",
+
+  "widgets": [
+    {
+      "name": "Quick Access",
+      "description": "Open Demo PWA quickly",
+      "icons": [
+        {
+          "src": "icon1.png",
+          "sizes": "192x192"
+        }
+      ],
+      "url": "index1.html"
+    }
+  ],
+
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+
+  "note_taking": {
+    "new_note_url": "index1.html"
+  }
+    }
+      
